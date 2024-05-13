@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #58B09C;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input{
+        width: calc(100% - 20px);
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-size: 14px;
+}
+select{
+    width: calc(100% - 20px);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+}
+button {
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: none;
+    border-color: #58B09C;
+}
+
+button {
+    width: 30%;
+    background-color: #58B09C;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    padding: 6px 6px;
+    margin: 2%;
+}
+
+button.wallet-btn {
+    width: 50%;
+    padding: 8px 10px;
+    background-color: #386150;
+}
+
+button:hover {
+    background-color: #4A8976;
+}
+
+#votesCount h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #58B09C;
+}
+
+#votesCount p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    input,
+    select,
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
