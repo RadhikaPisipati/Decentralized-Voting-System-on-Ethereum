@@ -14,22 +14,22 @@ This project is a decentralized voting application (DApp) built on blockchain te
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repository`
-2. Navigate to the project directory: `cd your-repository`
-3. Install dependencies:
+1. Clone the repository: `git clone https://github.com/RadhikaPisipati/Decentralized-Voting-System-on-Ethereum.git`
+2. Install dependencies:
    ```bash
    npm install
    yarn
    corepack enable
    yarn add solc@0.8.7-fixed
-   yarn add ethers yarn add fs
+   yarn add ethers  
+   yarn add fs
    ```
-4. Compile the contract:
+3. Compile the contract:
 
 solcjs --abi votee.sol   
 solcjs --bin votee.sol  
 
-5. Deploy the contract:  
+4. Deploy the contract:  
 
 node deploy.js  
 
